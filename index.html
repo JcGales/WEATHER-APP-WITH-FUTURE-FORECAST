@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search city...">
+            <button id="search-button"><i class="fas fa-search"></i> Search</button>
+        </div>
+
+        <!-- Current Weather Section -->
+        <div class="weather-card current-weather">
+            <div class="location-info">
+                <h2 id="city-name">--</h2>
+                <div class="date" id="date">--</div>
+                <div class="temp" id="temperature">--°</div>
+            </div>
+            
+            <div class="weather-icon-container">
+                <img src="" alt="Weather Icon" class="weather-icon" id="weather-icon">
+            </div>
+            
+            <div id="weather-description">--</div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <div><i class="fas fa-wind"></i></div>
+                    <div class="detail-value" id="wind-speed">-- km/h</div>
+                </div>
+                <div class="detail-item">
+                    <div><i class="fas fa-tint"></i></div>
+                    <div class="detail-value" id="humidity">--%</div>
+                </div>
+                <div class="detail-item">
+                    <div><i class="fas fa-cloud-rain"></i></div>
+                    <div class="detail-value" id="precipitation">--%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Forecast Section -->
+        <div class="weather-card">
+            <h2 class="forecast-header"><i class="fas fa-calendar-alt"></i> 5-Day Forecast</h2>
+            <div class="forecast-container" id="forecast-container">
+                <!-- Forecast days will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
